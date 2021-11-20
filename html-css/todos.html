@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeeptiTheng Todo App</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="todo-app.css" />
+</head>
+
+<body>
+  <main class="TodoPage Main">
+    <article>
+      <h1 class="TodoPage-title">My TODO List</h1>
+      <section class="AddTodo">
+        <input class="AddTodo-text" type="text" placeholder="What's next?" />
+        <input class="AddTodo-date" type="date" />
+        <input class="AddTodo-button" type="button" value="Add" />
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle-text">Due Today</p>
+          <p class="TodoSectionTitle-remainingCount">1/2</p>
+        </div>
+
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="radio" />
+              Submit Project
+              <p class="TodoItem-overdueLabel">Due Today</p>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="radio" />
+              Call to accountant
+              <p class="TodoItem-overdueLabel">Overdue</p>
+            </label>
+          </li>
+        </ul>
+
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle-text">Due Tomorrow</p>
+          <p class="TodoSectionTitle-remainingCount">0/1</p>
+        </div>
+
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="radio" />
+              Parent Meeting at 10:30pm
+            </label>
+          </li>
+        </ul>
+
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle-text">Remaining</p>
+          <p class="TodoSectionTitle-remainingCount">0/3</p>
+        </div>
+
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="radio" />
+              TODO Something
+              <p class="TodoItem-remainingLabel">Nov 18</p>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="radio" />
+              TODO Something
+              <p class="TodoItem-remainingLabel">Nov 19</p>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="radio" />
+              TODO Something
+              <p class="TodoItem-remainingLabel">Nov 20</p>
+            </label>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
